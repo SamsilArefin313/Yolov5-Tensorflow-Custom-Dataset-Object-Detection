@@ -1,0 +1,49 @@
+Project Name: Yolov5-Tensorflow Custom Dataset Object Detection
+
+Steps:
+A. Preparing Image data
+B. Preparing Pycharm
+
+A. Preparing Image data
+1. Number of Images should be 1000 and using "Tensorflow data augmentation code" make is 4000.
+
+2. Label Images from, "makesense.ai" or "labellingimg"
+
+3. After downloading the zipped file of labels in "VOCXML" formate unzip it
+
+4. Go to the image folders directory and write cmd and use "dir /b> list.txt" Separate the train & test image names and save it without ".jpeg" 
+
+5. Dataset structure should be like this
+    ├── Dataset folder 
+        ├── images
+            ├── 1111.jpg
+            ├── 2222.jpg
+        ├── labels
+            ├── 1111.xml
+            ├── 2222.xml
+        ├── train.txt
+        ├── test.txt
+
+
+B. Preparing Pycharm 
+1. Goto that link, download & Extract "https://github.com/jahongir7174/YOLOv5-tf/tree/master"
+
+2. Install gitlab, Write in console "pip install python-gitlab"
+
+3. Install other required packages mentioned on "requirements.txt"
+
+4. "Paste" prepared folder in project location area.
+
+5. Modify "main.py" according to custom dataset folder
+
+6. For running the trainning the model type in Terminal>local "python main.py --train"
+
+7. For Testing "python main.py --test"
+
+
+
+
+https://github.com/jahongir7174/YOLOv5-tf/tree/master
+pip install python-gitlab
+dir /b> list.txt
+Tensorflow data augmentation code
